@@ -1,98 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@342&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-@media screen and (min-width: 780px){
-  header {
-    font-size: 100px;
-    font-family: 'MuseoModerno';
-    text-align: center;
-    margin-top: 20px;
-  }
 
-  .score {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-    border: 2px solid black;
-    width : 200px;
-    margin: 5px auto;
-  }
-
-  #add_image {
-    top: 188px;
-    position: absolute;
-    left: 33%;
-  }
-
-  #minus_image {
-    top: 188px;
-    position: absolute;
-    right: 33%;
-  }
-  .image {
-    cursor: pointer;
-  }
+header{
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 779px){
-  header {
-    font-size: 18px;
-    font-family: 'MuseoModerno';
-    text-align: center;
-    margin-top: 20px;
-  }
-
-  .score {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-    border: 2px solid black;
-    width : 200px;
-    margin: 5px auto;
-  }
-
-  #add_image {
-    top: 188px;
-    position: absolute;
-    left: 33%;
-  }
-
-  #minus_image {
-    top: 188px;
-    position: absolute;
-    right: 33%;
-  }
+p{
+  background-color: #ffd900;
+  font-size: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  top: 0px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 80px;
+  border: 2px solid black;
+  border-radius: 50px;
 }
-@media screen and (max-width: 331px){
-  header {
-    font-size: 16px;
-    font-family: 'MuseoModerno';
-    text-align: center;
-    margin-top: 20px;
-  }
+.computer{
+  background-color: #a136ff;
+  font-size: 30px;
+  font-family: 'Shadows Into Light', cursive;
+  position: absolute;
+  top: 160px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-left: 1080px;
+  border: 2px solid black;
+  border-radius: 50px;
+}
+#cscore{
+  position: absolute;
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  top: 190px;
+  width: 30px;
+  margin-left: 1110px;
+  margin-top: 100px;
+  cursor: pointer;
+}
 
-  .score {
-    font-size: 50px;
-    text-align: center;
-    font-family: 'Metal Mania', cursive;
-    border: 2px solid black;
-    width : 200px;
-    margin: 5px auto;
-  }
+.scoreboard{
+  font-family: 'Metal Mania', cursive;
+  text-align: center;
+  font-size: 30px;
+  border: 5px solid black;
+  margin: auto;
+  width: 150px;
+  margin-bottom: 25px;
+}
 
-  #add_image {
-    margin-right: 15px;
-    top: 188px;
-    position: absolute;
-    left: 33%;
-  }
+.images{
+  position: absolute;
+  top: 0px;
+  width: 30px;
+  margin-left: 80px;
+  margin-top: 100px;
+  cursor: pointer;
+}
 
-  #minus_image {
-    top: 188px;
-    position: absolute;
-    right: 33%;
-  }
+#one{
+  margin-top: 100px;
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}
+#two{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}
+#three{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#four{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#five{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#six{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#seven{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#eight{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#nine{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
+}#ten{
+  border: 2px solid black;
+  border-radius: 25%;
+  margin-bottom: 30px;
 }
