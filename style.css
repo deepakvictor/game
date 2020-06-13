@@ -5,31 +5,94 @@
   padding: 0;
   box-sizing: border-box;
 }
+@media screen and (min-width: 780px){
+  header {
+    font-size: 100px;
+    font-family: 'MuseoModerno';
+    text-align: center;
+    margin-top: 20px;
+  }
 
-header {
-  font-size: 100px;
-  font-family: 'MuseoModerno';
-  text-align: center;
-  margin-top: 20px;
+  .score {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    border: 2px solid black;
+    width : 200px;
+    margin: 5px auto;
+  }
+
+  #add_image {
+    top: 188px;
+    position: absolute;
+    left: 33%;
+  }
+
+  #minus_image {
+    top: 188px;
+    position: absolute;
+    right: 33%;
+  }
+  .image {
+    cursor: pointer;
+  }
 }
+@media screen and (max-width: 779px){
+  header {
+    font-size: 18px;
+    font-family: 'MuseoModerno';
+    text-align: center;
+    margin-top: 20px;
+  }
 
-.score {
-  font-size: 50px;
-  text-align: center;
-  font-family: 'Metal Mania', cursive;
-  border: 2px solid black;
-  width : 200px;
-  margin: 5px auto;
+  .score {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    border: 2px solid black;
+    width : 200px;
+    margin: 5px auto;
+  }
+
+  #add_image {
+    top: 188px;
+    position: absolute;
+    left: 33%;
+  }
+
+  #minus_image {
+    top: 188px;
+    position: absolute;
+    right: 33%;
+  }
 }
+@media screen and (max-width: 331px){
+  header {
+    font-size: 16px;
+    font-family: 'MuseoModerno';
+    text-align: center;
+    margin-top: 20px;
+  }
 
-#add_image {
-  top: 188px;
-  position: absolute;
-  left: 33%;
-}
+  .score {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+    border: 2px solid black;
+    width : 200px;
+    margin: 5px auto;
+  }
 
-#minus_image {
-  top: 188px;
-  position: absolute;
-  right: 33%;
+  #add_image {
+    margin-right: 15px;
+    top: 188px;
+    position: absolute;
+    left: 33%;
+  }
+
+  #minus_image {
+    top: 188px;
+    position: absolute;
+    right: 33%;
+  }
 }
