@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 *{
+  background-color: #1cc7c4;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -23,15 +24,14 @@ header{
   position: absolute;
   top: 300px;
   right: 500px;
-  padding: 20px;
 }
 
 p{
-  background-color: #ffd900;
+  background-color: #87fc0a;
   font-size: 30px;
   font-family: 'Shadows Into Light', cursive;
   position: absolute;
-  top: 0px;
+  top: 20px;
   padding: 10px;
   margin-top: 5px;
   margin-left: 80px;
@@ -39,7 +39,7 @@ p{
   border-radius: 50px;
 }
 .computer{
-  background-color: #a136ff;
+  background-color: #f72d05;
   font-size: 30px;
   font-family: 'Shadows Into Light', cursive;
   position: absolute;
@@ -55,10 +55,25 @@ p{
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
   top: 190px;
-  width: 30px;
+  width: 0px;
   margin-left: 1110px;
   margin-top: 100px;
   cursor: pointer;
+}
+
+.buttons{
+  position: fixed;
+  top: 15px;
+  right: 50px;
+}
+#play{
+  margin-right: 15px;
+}
+#pause{
+  margin-right: 15px;
+}
+#next{
+  margin-right: 15px;
 }
 
 .scoreboard{
@@ -74,7 +89,7 @@ p{
 .images{
   position: absolute;
   top: 0px;
-  width: 30px;
+  width: 0px;
   margin-left: 80px;
   margin-top: 100px;
   cursor: pointer;

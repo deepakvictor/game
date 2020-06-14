@@ -14,8 +14,25 @@ const nine = document.querySelector('#nine');
 const ten = document.querySelector('#ten');
 const cscore = document.querySelector('#cscore');
 const result = document.querySelector('#result');
+const audio = document.querySelector('#myAudio');
+const playit = document.querySelector('#play');
+const pauseit = document.querySelector('#pause');
+const next = document.querySelector('#next');
+const ks = document.querySelector('#ks');
+
+function song() {
+  playit.addEventListener("click", function () {
+    ks.play();
+  })
+  pauseit.addEventListener("click",function () {
+    ks.pause();
+  })
+}
+
+song();
 
 function computer(n) {
+  audio.play();
   let random_num = Math.floor(Math.random() * 10) + 1;
   cscore.innerHTML = random_num;
   if (n != random_num) {
