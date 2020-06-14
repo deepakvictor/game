@@ -13,62 +13,57 @@ const eight = document.querySelector('#eight');
 const nine = document.querySelector('#nine');
 const ten = document.querySelector('#ten');
 const cscore = document.querySelector('#cscore');
+const result = document.querySelector('#result');
 
-function computer() {
+function computer(n) {
   let random_num = Math.floor(Math.random() * 10) + 1;
   cscore.innerHTML = random_num;
-}
+  if (n != random_num) {
+    start_run += n;
+    run.innerHTML = start_run;
+  }else {
+    start_wicket += 1;
+    wicket.innerHTML = start_wicket;
+    result.innerHTML = `your score is ${start_run} for ${start_wicket} wicket`;
+    if (start_wicket == 5) {
+      alert(`your score is ${start_run} for ${start_wicket} wicket`);
+      alert("your game is over ")
+      location.reload();
+    }
+    }
+  }
+
 
 function main() {
   one.addEventListener("click", function(){
-    start_run += 1;
-    run.innerHTML = start_run;
-    computer();
+    computer(1);
   })
   two.addEventListener("click", function(){
-    start_run+= 2;
-    run.innerHTML = start_run;
-    computer();
+    computer(2);
   })
   three.addEventListener("click", function(){
-    start_run+=3;
-    run.innerHTML = start_run;
-    computer();
+    computer(3);
   })
   four.addEventListener("click", function(){
-    start_run+=4;
-    run.innerHTML = start_run;
-    computer();
+    computer(4);
   })
   five.addEventListener("click", function(){
-    start_run+=5;
-    run.innerHTML = start_run;
-    computer();
+    computer(5);
   })
   six.addEventListener("click", function(){
-    start_run+=6;
-    run.innerHTML = start_run;
-    computer();
+    computer(6);
   })
   seven.addEventListener("click", function(){
-    start_run+=7;
-    run.innerHTML = start_run;
-    computer();
+    computer(7);
   })
   eight.addEventListener("click", function(){
-    start_run+=8;
-    run.innerHTML = start_run;
-    computer();
+    computer(8);
   })
   nine.addEventListener("click", function(){
-    start_run+=9;
-    run.innerHTML = start_run;
-    computer();
+    computer(9);
   })
   ten.addEventListener("click", function(){
-    start_run+=10;
-    run.innerHTML = start_run;
-    computer();
+    computer(10);
   })
 }
 main();
